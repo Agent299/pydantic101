@@ -1,0 +1,22 @@
+[project]
+name = "pydantic101"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Agent299", email = "meghallium@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "openai>=3.42.0",
+    "pydantic>=2.14.2",
+    "pydantic-settings>=2.16.2",
+]
+
+[project.scripts]
+pydantic101 = "pydantic101:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
